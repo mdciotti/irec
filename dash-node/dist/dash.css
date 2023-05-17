@@ -1,0 +1,82 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to top, #243b55, #141e30);
+    color: #b2fefa;
+    overflow: hidden;
+}
+
+#data-log {
+    font-family: 'Overpass Mono', monospace;
+    background: #eeeeee;
+    padding: 32px;
+    overflow: auto;
+    height: 320px;
+}
+
+.clock {
+    font-family: 'Overpass Mono', monospace;
+}
+
+#app {
+    height: 100%;
+}
+
+.dash {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-row {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.dash-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.dash-row .widget {
+    flex: 1 1 auto;
+}
+
+.dash-statusbar {
+    flex: 0 0 auto;
+    display: flex;
+    padding: 4px;
+}
+
+.status-item {
+    flex: 0 0 0;
+    padding: 4px 8px;
+    border: 1px solid #356b83;
+    margin: 4px;
+    cursor: default;
+}
+
+.status-item-value {
+    /* font-family: 'Overpass Mono', monospace; */
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.status-item-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0ed2f7;
+    white-space: nowrap;
+}
+
+.flex-space {
+    flex: 1 1 0;
+}
